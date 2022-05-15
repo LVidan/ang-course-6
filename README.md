@@ -5,7 +5,9 @@
 - Iznad tabele postoje 2 buttona, ascending i descending.
 - Klikom na ascending button zapisi se sortiraju rastućim redosledom (gledajući svojstvo name), a klikom na descending (gledajući svojstvo name) opadajućim.
 - Sortiranje nije korelisano sa bojom. Drugim rečima ako je red sa Australijom zelene boje, nakon soritranja i dalje taj red treba biti zelene boje..
-[ 
+
+<pre>
+  [ 
         {name: 'Afghanistan', code: 'AF'}, 
         {name: 'Åland Islands', code: 'AX'}, 
         {name: 'Albania', code: 'AL'}, 
@@ -250,3 +252,4 @@
         {name: 'Zambia', code: 'ZM'}, 
         {name: 'Zimbabwe', code: 'ZW'} 
 ]
+</pre>
