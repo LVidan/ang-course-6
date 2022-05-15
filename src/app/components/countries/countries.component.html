@@ -1,0 +1,24 @@
+<div class="container">
+  <h5>Filter table:</h5>
+  <button class="btn btn-primary m-2" (click)="reorderUp()">Ascending</button>
+  <button class="btn btn-secondary" (click)="reorderDown()">Descending</button>
+  <hr>
+  <table border="1">
+    <tr>
+      <ng-container *ngFor="let tableHeading of tableHeadings">
+        <th>{{ tableHeading }}</th>
+      </ng-container>
+    </tr>
+    <ng-container *ngFor="let country of countries">
+      <tr #clicked>
+        <td>{{ country.name }}</td>
+        <td>{{ country.code }}</td>
+        <td class="text-center">
+          <button class="btn btn-warning" (click)="colorChange(clicked)">
+            Click
+          </button>
+        </td>
+      </tr>
+      </ng-container>
+  </table>
+</div>
